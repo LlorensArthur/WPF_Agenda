@@ -1,0 +1,45 @@
+﻿<Window x:Class="WpfApp3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3"
+        mc:Ignorable="d"
+        Title="Agenda LaManu" Height="450" Width="800"
+        >
+    <Grid>
+        <DockPanel>
+            <Menu>
+                <MenuItem Header="Clients">
+                    <Hyperlink Name="AddClient" Click="AddClient_Click">
+                        Ajouter un client
+                    </Hyperlink>
+                    <Hyperlink Name="ListClients" Click="ListClient_Click">
+                        Voir les clients
+                    </Hyperlink>
+                </MenuItem>
+                <MenuItem Header="Courtier">
+                    <Hyperlink Name="AddCourtier" Click="AddCourtier_Click">
+                        Ajouter un client
+                    </Hyperlink>
+                    <Hyperlink Name="ListCourtier" Click="ListCourtier_Click">
+                        Voir les clients
+                    </Hyperlink>
+                </MenuItem>
+                <MenuItem Header="Rendez-vous">
+                    <Hyperlink Name="AddRDV" Click="AddRDV_Click">
+                        Ajouter un rendez-vous
+                    </Hyperlink>
+                    <Hyperlink Name="ListDRV" Click="ListRDV_Click">
+                        Voir les rendez-vous
+                    </Hyperlink>
+                </MenuItem>
+            </Menu>
+        </DockPanel>
+        <StackPanel>
+            <Frame Name="MainFrame" 
+                   NavigationUIVisibility="Hidden">
+            </Frame>
+        </StackPanel>
+    </Grid>
+</Window>
